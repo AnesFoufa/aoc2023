@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 from dataclasses import dataclass
-from typing import Tuple, Callable
+from typing import Tuple
+import re
 
 
 @dataclass()
@@ -19,9 +20,10 @@ def part_one(path):
 
     numbers: list[Number] = []
     symbols: list[Tuple[int, int]] = []
+    pattern = re.compile(r"(\d+|[^.])")
     with open(path, "r") as f:
         for (row, line) in enumerate(f):
-            parse_numbers_and_symbols(row, line, is_symbol, numbers, symbols)
+            parse_numbers_and_symbols(row, line, pattern, numbers, symbols)
 
     for number in numbers:
         if is_part(number, symbols):
@@ -35,9 +37,10 @@ def part_two(path):
 
     numbers: list[Number] = []
     gears: list[Tuple[int, int]] = []
+    pattern = re.compile(r"(\d+|\*)")
     with open(path, "r") as f:
         for (row, line) in enumerate(f):
-            parse_numbers_and_symbols(row, line, is_gear, numbers, gears)
+            parse_numbers_and_symbols(row, line, pattern, numbers, gears)
 
     for (row, col) in gears:
         adjacent_to_current_gear: list[Number] = []
@@ -54,46 +57,19 @@ def part_two(path):
     print(sum_gear_ratios)
 
 
-def parse_numbers_and_symbols(
-    row: int,
-    line: str,
-    is_symbol: Callable[[str], bool],
-    numbers: list[Number],
-    symbols: list[Tuple[int, int]],
-):
-    parsing_number = False
-    val = 0
-    start_col = 0
-
-    for (col, char) in enumerate(line.strip()):
-        if char.isdigit():
-            if not parsing_number:
-                start_col = col
-            parsing_number = True
-            val = val * 10 + int(char)
+def parse_numbers_and_symbols(row, line, pattern, numbers, symbols):
+    for match_o in pattern.finditer(line.strip()):
+        string = match_o.group()
+        col_start, col_end = match_o.span()
+        if string[0].isdigit():
+            width = col_end - col_start
+            numbers.append(Number(val=int(string), row=row, col=col_start, width=width))
         else:
-            if parsing_number:
-                numbers.append(
-                    Number(val=val, row=row, col=start_col, width=col - start_col)
-                )
-            if is_symbol(char):
-                symbols.append((row, col))
-            parsing_number = False
-            val = 0
-    if parsing_number:
-        numbers.append(Number(val=val, row=row, col=start_col, width=col - start_col))
+            symbols.append((row, col_start))
 
 
 def is_part(number: Number, symbols):
     return any(number.is_adjacent(row, col) for (row, col) in symbols)
-
-
-def is_symbol(char: str):
-    return char != "."
-
-
-def is_gear(char: str):
-    return char == "*"
 
 
 if __name__ == "__main__":
