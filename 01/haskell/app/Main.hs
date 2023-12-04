@@ -1,9 +1,9 @@
 module Main where
-import qualified Data.Char as Char
-import Text.Regex.TDFA ((=~), AllTextMatches (getAllTextMatches))
+import qualified Data.Char       as Char
+import           Text.Regex.TDFA (AllTextMatches (getAllTextMatches), (=~))
 
 main :: IO ()
-main = do 
+main = do
     content <- readFile "../input.txt"
     let part1 = sum $ fmap calibrationValue (lines content)
     let part2 = sum $ fmap spelledCalibrationValue (lines content)
@@ -24,13 +24,13 @@ firstAndLastDigit digits = read [firstDigit, lastDigit]
           lastDigit = last digits
 
 textMatchToCharNumber :: String -> Char
-textMatchToCharNumber "one" = '1'
-textMatchToCharNumber "two" = '2'
+textMatchToCharNumber "one"   = '1'
+textMatchToCharNumber "two"   = '2'
 textMatchToCharNumber "three" = '3'
-textMatchToCharNumber "four" = '4'
-textMatchToCharNumber "five" = '5'
-textMatchToCharNumber "six" = '6'
+textMatchToCharNumber "four"  = '4'
+textMatchToCharNumber "five"  = '5'
+textMatchToCharNumber "six"   = '6'
 textMatchToCharNumber "seven" = '7'
 textMatchToCharNumber "eight" = '8'
-textMatchToCharNumber "nine" = '9'
-textMatchToCharNumber x = head x
+textMatchToCharNumber "nine"  = '9'
+textMatchToCharNumber x       = head x
