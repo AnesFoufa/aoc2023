@@ -35,18 +35,10 @@ def compute_nb_solutions(duration: int, record: int):
         sqrt_delta = sqrt(delta)
 
         duration_min = (duration - sqrt_delta) / 2
-        ceil_duration_min = ceil(duration_min)
-        if duration_min == ceil_duration_min:
-            bound1 = int(duration_min + 1)
-        else:
-            bound1 = ceil_duration_min
+        bound1 =  floor(duration_min + 1)
 
         duration_max = (duration + sqrt_delta) / 2
-        floor_duration_max = floor(duration_max)
-        if duration_max == floor_duration_max:
-            bound2 = int(duration_max - 1)
-        else:
-            bound2 = floor_duration_max
+        bound2 = ceil(duration_max - 1)
 
         nb_solutions = bound2 - bound1 + 1
     return nb_solutions
