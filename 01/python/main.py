@@ -26,7 +26,7 @@ digits_map = {
 
 
 def part2():
-    digits_pattern = re.compile(r"(one|two|three|four|five|six|seven|eight|nine|[1-9])")
+    digits_pattern = re.compile(r"(?=(one|two|three|four|five|six|seven|eight|nine|[1-9]))")
     sum_calibration_values = 0
     with open("../input.txt", "r") as f:
         for line in f:
