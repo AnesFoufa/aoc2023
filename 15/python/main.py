@@ -30,7 +30,6 @@ def part_two(path):
             box = boxes[i_box]
             box[label] = focal_length
 
-    res = 0
     for (i_box, box) in enumerate(boxes, 1):
         for (i_label, (label, length)) in enumerate(box.items(), 1):
             res += i_label * i_box * length
