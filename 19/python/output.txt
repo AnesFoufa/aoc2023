@@ -1,0 +1,818 @@
+19114
+
+input
+[(RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1,4000]), ['in'])]
+output:
+(   [   (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1,4000]),
+            [   Rule(condition=Condition(left_attribute='s',
+                                         operator=<built-in function lt>,
+                                         right_value=1351),
+                     destination='px'),
+                'qqz'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[]
+
+input
+[   (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1,4000]),
+        [   Rule(condition=Condition(left_attribute='s',
+                                     operator=<built-in function lt>,
+                                     right_value=1351),
+                 destination='px'),
+            'qqz'])]
+output:
+(   [   (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1,1350]), ['px']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]),
+            ['qqz'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[]
+
+input
+[   (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1,1350]), ['px']),
+    (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]), ['qqz'])]
+output:
+(   [   (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1,1350]),
+            [   Rule(condition=Condition(left_attribute='a',
+                                         operator=<built-in function lt>,
+                                         right_value=2006),
+                     destination='qkq'),
+                Rule(condition=Condition(left_attribute='m',
+                                         operator=<built-in function gt>,
+                                         right_value=2090),
+                     destination='A'),
+                'rfg']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]),
+            ['qqz'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[]
+
+input
+[   (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1,1350]),
+        [   Rule(condition=Condition(left_attribute='a',
+                                     operator=<built-in function lt>,
+                                     right_value=2006),
+                 destination='qkq'),
+            Rule(condition=Condition(left_attribute='m',
+                                     operator=<built-in function gt>,
+                                     right_value=2090),
+                 destination='A'),
+            'rfg']),
+    (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]), ['qqz'])]
+output:
+(   [   (RatingSpace(x=[1,4000], m=[1,4000], a=[1,2005], s=[1,1350]), ['qkq']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[2006,4000], s=[1,1350]),
+            [   Rule(condition=Condition(left_attribute='m',
+                                         operator=<built-in function gt>,
+                                         right_value=2090),
+                     destination='A'),
+                'rfg']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]),
+            ['qqz'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[]
+
+input
+[   (RatingSpace(x=[1,4000], m=[1,4000], a=[1,2005], s=[1,1350]), ['qkq']),
+    (   RatingSpace(x=[1,4000], m=[1,4000], a=[2006,4000], s=[1,1350]),
+        [   Rule(condition=Condition(left_attribute='m',
+                                     operator=<built-in function gt>,
+                                     right_value=2090),
+                 destination='A'),
+            'rfg']),
+    (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]), ['qqz'])]
+output:
+(   [   (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,2005], s=[1,1350]),
+            [   Rule(condition=Condition(left_attribute='x',
+                                         operator=<built-in function lt>,
+                                         right_value=1416),
+                     destination='A'),
+                'crn']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[2006,4000], s=[1,1350]),
+            [   Rule(condition=Condition(left_attribute='m',
+                                         operator=<built-in function gt>,
+                                         right_value=2090),
+                     destination='A'),
+                'rfg']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]),
+            ['qqz'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[]
+
+input
+[   (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,2005], s=[1,1350]),
+        [   Rule(condition=Condition(left_attribute='x',
+                                     operator=<built-in function lt>,
+                                     right_value=1416),
+                 destination='A'),
+            'crn']),
+    (   RatingSpace(x=[1,4000], m=[1,4000], a=[2006,4000], s=[1,1350]),
+        [   Rule(condition=Condition(left_attribute='m',
+                                     operator=<built-in function gt>,
+                                     right_value=2090),
+                 destination='A'),
+            'rfg']),
+    (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]), ['qqz'])]
+output:
+(   [   (RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), ['A']),
+        (   RatingSpace(x=[1416,4000], m=[1,4000], a=[1,2005], s=[1,1350]),
+            ['crn']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[2006,4000], s=[1,1350]),
+            [   Rule(condition=Condition(left_attribute='m',
+                                         operator=<built-in function gt>,
+                                         right_value=2090),
+                     destination='A'),
+                'rfg']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]),
+            ['qqz'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[]
+
+input
+[   (RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), ['A']),
+    (RatingSpace(x=[1416,4000], m=[1,4000], a=[1,2005], s=[1,1350]), ['crn']),
+    (   RatingSpace(x=[1,4000], m=[1,4000], a=[2006,4000], s=[1,1350]),
+        [   Rule(condition=Condition(left_attribute='m',
+                                     operator=<built-in function gt>,
+                                     right_value=2090),
+                 destination='A'),
+            'rfg']),
+    (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]), ['qqz'])]
+output:
+(   [   (   RatingSpace(x=[1416,4000], m=[1,4000], a=[1,2005], s=[1,1350]),
+            ['crn']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[2006,4000], s=[1,1350]),
+            [   Rule(condition=Condition(left_attribute='m',
+                                         operator=<built-in function gt>,
+                                         right_value=2090),
+                     destination='A'),
+                'rfg']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]),
+            ['qqz'])],
+    RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350])]
+
+input
+[   (RatingSpace(x=[1416,4000], m=[1,4000], a=[1,2005], s=[1,1350]), ['crn']),
+    (   RatingSpace(x=[1,4000], m=[1,4000], a=[2006,4000], s=[1,1350]),
+        [   Rule(condition=Condition(left_attribute='m',
+                                     operator=<built-in function gt>,
+                                     right_value=2090),
+                 destination='A'),
+            'rfg']),
+    (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]), ['qqz'])]
+output:
+(   [   (   RatingSpace(x=[1416,4000], m=[1,4000], a=[1,2005], s=[1,1350]),
+            [   Rule(condition=Condition(left_attribute='x',
+                                         operator=<built-in function gt>,
+                                         right_value=2662),
+                     destination='A'),
+                'R']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[2006,4000], s=[1,1350]),
+            [   Rule(condition=Condition(left_attribute='m',
+                                         operator=<built-in function gt>,
+                                         right_value=2090),
+                     destination='A'),
+                'rfg']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]),
+            ['qqz'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350])]
+
+input
+[   (   RatingSpace(x=[1416,4000], m=[1,4000], a=[1,2005], s=[1,1350]),
+        [   Rule(condition=Condition(left_attribute='x',
+                                     operator=<built-in function gt>,
+                                     right_value=2662),
+                 destination='A'),
+            'R']),
+    (   RatingSpace(x=[1,4000], m=[1,4000], a=[2006,4000], s=[1,1350]),
+        [   Rule(condition=Condition(left_attribute='m',
+                                     operator=<built-in function gt>,
+                                     right_value=2090),
+                 destination='A'),
+            'rfg']),
+    (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]), ['qqz'])]
+output:
+(   [   (RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), ['A']),
+        (RatingSpace(x=[1416,2662], m=[1,4000], a=[1,2005], s=[1,1350]), ['R']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[2006,4000], s=[1,1350]),
+            [   Rule(condition=Condition(left_attribute='m',
+                                         operator=<built-in function gt>,
+                                         right_value=2090),
+                     destination='A'),
+                'rfg']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]),
+            ['qqz'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350])]
+
+input
+[   (RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), ['A']),
+    (RatingSpace(x=[1416,2662], m=[1,4000], a=[1,2005], s=[1,1350]), ['R']),
+    (   RatingSpace(x=[1,4000], m=[1,4000], a=[2006,4000], s=[1,1350]),
+        [   Rule(condition=Condition(left_attribute='m',
+                                     operator=<built-in function gt>,
+                                     right_value=2090),
+                 destination='A'),
+            'rfg']),
+    (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]), ['qqz'])]
+output:
+(   [   (RatingSpace(x=[1416,2662], m=[1,4000], a=[1,2005], s=[1,1350]), ['R']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[2006,4000], s=[1,1350]),
+            [   Rule(condition=Condition(left_attribute='m',
+                                         operator=<built-in function gt>,
+                                         right_value=2090),
+                     destination='A'),
+                'rfg']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]),
+            ['qqz'])],
+    RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350])]
+
+input
+[   (RatingSpace(x=[1416,2662], m=[1,4000], a=[1,2005], s=[1,1350]), ['R']),
+    (   RatingSpace(x=[1,4000], m=[1,4000], a=[2006,4000], s=[1,1350]),
+        [   Rule(condition=Condition(left_attribute='m',
+                                     operator=<built-in function gt>,
+                                     right_value=2090),
+                 destination='A'),
+            'rfg']),
+    (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]), ['qqz'])]
+output:
+(   [   (   RatingSpace(x=[1,4000], m=[1,4000], a=[2006,4000], s=[1,1350]),
+            [   Rule(condition=Condition(left_attribute='m',
+                                         operator=<built-in function gt>,
+                                         right_value=2090),
+                     destination='A'),
+                'rfg']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]),
+            ['qqz'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=[1416,2662], m=[1,4000], a=[1,2005], s=[1,1350]))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350])]
+
+input
+[   (   RatingSpace(x=[1,4000], m=[1,4000], a=[2006,4000], s=[1,1350]),
+        [   Rule(condition=Condition(left_attribute='m',
+                                     operator=<built-in function gt>,
+                                     right_value=2090),
+                 destination='A'),
+            'rfg']),
+    (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]), ['qqz'])]
+output:
+(   [   (   RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350]),
+            ['A']),
+        (   RatingSpace(x=[1,4000], m=[1,2090], a=[2006,4000], s=[1,1350]),
+            ['rfg']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]),
+            ['qqz'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350])]
+
+input
+[   (RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350]), ['A']),
+    (RatingSpace(x=[1,4000], m=[1,2090], a=[2006,4000], s=[1,1350]), ['rfg']),
+    (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]), ['qqz'])]
+output:
+(   [   (   RatingSpace(x=[1,4000], m=[1,2090], a=[2006,4000], s=[1,1350]),
+            ['rfg']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]),
+            ['qqz'])],
+    RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350]),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350])]
+
+input
+[   (RatingSpace(x=[1,4000], m=[1,2090], a=[2006,4000], s=[1,1350]), ['rfg']),
+    (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]), ['qqz'])]
+output:
+(   [   (   RatingSpace(x=[1,4000], m=[1,2090], a=[2006,4000], s=[1,1350]),
+            [   Rule(condition=Condition(left_attribute='s',
+                                         operator=<built-in function lt>,
+                                         right_value=537),
+                     destination='gd'),
+                Rule(condition=Condition(left_attribute='x',
+                                         operator=<built-in function gt>,
+                                         right_value=2440),
+                     destination='R'),
+                'A']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]),
+            ['qqz'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350])]
+
+input
+[   (   RatingSpace(x=[1,4000], m=[1,2090], a=[2006,4000], s=[1,1350]),
+        [   Rule(condition=Condition(left_attribute='s',
+                                     operator=<built-in function lt>,
+                                     right_value=537),
+                 destination='gd'),
+            Rule(condition=Condition(left_attribute='x',
+                                     operator=<built-in function gt>,
+                                     right_value=2440),
+                 destination='R'),
+            'A']),
+    (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]), ['qqz'])]
+output:
+(   [   (RatingSpace(x=[1,4000], m=[1,2090], a=[2006,4000], s=[1,536]), ['gd']),
+        (   RatingSpace(x=[1,4000], m=[1,2090], a=[2006,4000], s=[537,1350]),
+            [   Rule(condition=Condition(left_attribute='x',
+                                         operator=<built-in function gt>,
+                                         right_value=2440),
+                     destination='R'),
+                'A']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]),
+            ['qqz'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350])]
+
+input
+[   (RatingSpace(x=[1,4000], m=[1,2090], a=[2006,4000], s=[1,536]), ['gd']),
+    (   RatingSpace(x=[1,4000], m=[1,2090], a=[2006,4000], s=[537,1350]),
+        [   Rule(condition=Condition(left_attribute='x',
+                                     operator=<built-in function gt>,
+                                     right_value=2440),
+                 destination='R'),
+            'A']),
+    (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]), ['qqz'])]
+output:
+(   [   (   RatingSpace(x=[1,4000], m=[1,2090], a=[2006,4000], s=[1,536]),
+            [   Rule(condition=Condition(left_attribute='a',
+                                         operator=<built-in function gt>,
+                                         right_value=3333),
+                     destination='R'),
+                'R']),
+        (   RatingSpace(x=[1,4000], m=[1,2090], a=[2006,4000], s=[537,1350]),
+            [   Rule(condition=Condition(left_attribute='x',
+                                         operator=<built-in function gt>,
+                                         right_value=2440),
+                     destination='R'),
+                'A']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]),
+            ['qqz'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350])]
+
+input
+[   (   RatingSpace(x=[1,4000], m=[1,2090], a=[2006,4000], s=[1,536]),
+        [   Rule(condition=Condition(left_attribute='a',
+                                     operator=<built-in function gt>,
+                                     right_value=3333),
+                 destination='R'),
+            'R']),
+    (   RatingSpace(x=[1,4000], m=[1,2090], a=[2006,4000], s=[537,1350]),
+        [   Rule(condition=Condition(left_attribute='x',
+                                     operator=<built-in function gt>,
+                                     right_value=2440),
+                 destination='R'),
+            'A']),
+    (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]), ['qqz'])]
+output:
+(   [   (RatingSpace(x=[1,4000], m=[1,2090], a=[3334,4000], s=[1,536]), ['R']),
+        (RatingSpace(x=[1,4000], m=[1,2090], a=[2006,3333], s=[1,536]), ['R']),
+        (   RatingSpace(x=[1,4000], m=[1,2090], a=[2006,4000], s=[537,1350]),
+            [   Rule(condition=Condition(left_attribute='x',
+                                         operator=<built-in function gt>,
+                                         right_value=2440),
+                     destination='R'),
+                'A']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]),
+            ['qqz'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350])]
+
+input
+[   (RatingSpace(x=[1,4000], m=[1,2090], a=[3334,4000], s=[1,536]), ['R']),
+    (RatingSpace(x=[1,4000], m=[1,2090], a=[2006,3333], s=[1,536]), ['R']),
+    (   RatingSpace(x=[1,4000], m=[1,2090], a=[2006,4000], s=[537,1350]),
+        [   Rule(condition=Condition(left_attribute='x',
+                                     operator=<built-in function gt>,
+                                     right_value=2440),
+                 destination='R'),
+            'A']),
+    (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]), ['qqz'])]
+output:
+(   [   (RatingSpace(x=[1,4000], m=[1,2090], a=[2006,3333], s=[1,536]), ['R']),
+        (   RatingSpace(x=[1,4000], m=[1,2090], a=[2006,4000], s=[537,1350]),
+            [   Rule(condition=Condition(left_attribute='x',
+                                         operator=<built-in function gt>,
+                                         right_value=2440),
+                     destination='R'),
+                'A']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]),
+            ['qqz'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=[1,4000], m=[1,2090], a=[3334,4000], s=[1,536]))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350])]
+
+input
+[   (RatingSpace(x=[1,4000], m=[1,2090], a=[2006,3333], s=[1,536]), ['R']),
+    (   RatingSpace(x=[1,4000], m=[1,2090], a=[2006,4000], s=[537,1350]),
+        [   Rule(condition=Condition(left_attribute='x',
+                                     operator=<built-in function gt>,
+                                     right_value=2440),
+                 destination='R'),
+            'A']),
+    (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]), ['qqz'])]
+output:
+(   [   (   RatingSpace(x=[1,4000], m=[1,2090], a=[2006,4000], s=[537,1350]),
+            [   Rule(condition=Condition(left_attribute='x',
+                                         operator=<built-in function gt>,
+                                         right_value=2440),
+                     destination='R'),
+                'A']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]),
+            ['qqz'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=[1,4000], m=[1,2090], a=[2006,3333], s=[1,536]))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350])]
+
+input
+[   (   RatingSpace(x=[1,4000], m=[1,2090], a=[2006,4000], s=[537,1350]),
+        [   Rule(condition=Condition(left_attribute='x',
+                                     operator=<built-in function gt>,
+                                     right_value=2440),
+                 destination='R'),
+            'A']),
+    (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]), ['qqz'])]
+output:
+(   [   (   RatingSpace(x=[2441,4000], m=[1,2090], a=[2006,4000], s=[537,1350]),
+            ['R']),
+        (   RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350]),
+            ['A']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]),
+            ['qqz'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350])]
+
+input
+[   (   RatingSpace(x=[2441,4000], m=[1,2090], a=[2006,4000], s=[537,1350]),
+        ['R']),
+    (RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350]), ['A']),
+    (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]), ['qqz'])]
+output:
+(   [   (   RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350]),
+            ['A']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]),
+            ['qqz'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=[2441,4000], m=[1,2090], a=[2006,4000], s=[537,1350]))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350])]
+
+input
+[   (RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350]), ['A']),
+    (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]), ['qqz'])]
+output:
+(   [(RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]), ['qqz'])],
+    RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350]),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350]), RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350])]
+
+input
+[(RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]), ['qqz'])]
+output:
+(   [   (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]),
+            [   Rule(condition=Condition(left_attribute='s',
+                                         operator=<built-in function gt>,
+                                         right_value=2770),
+                     destination='qs'),
+                Rule(condition=Condition(left_attribute='m',
+                                         operator=<built-in function lt>,
+                                         right_value=1801),
+                     destination='hdj'),
+                'R'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350]), RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350])]
+
+input
+[   (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,4000]),
+        [   Rule(condition=Condition(left_attribute='s',
+                                     operator=<built-in function gt>,
+                                     right_value=2770),
+                 destination='qs'),
+            Rule(condition=Condition(left_attribute='m',
+                                     operator=<built-in function lt>,
+                                     right_value=1801),
+                 destination='hdj'),
+            'R'])]
+output:
+(   [   (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[2771,4000]),
+            ['qs']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,2770]),
+            [   Rule(condition=Condition(left_attribute='m',
+                                         operator=<built-in function lt>,
+                                         right_value=1801),
+                     destination='hdj'),
+                'R'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350]), RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350])]
+
+input
+[   (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[2771,4000]), ['qs']),
+    (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,2770]),
+        [   Rule(condition=Condition(left_attribute='m',
+                                     operator=<built-in function lt>,
+                                     right_value=1801),
+                 destination='hdj'),
+            'R'])]
+output:
+(   [   (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[2771,4000]),
+            [   Rule(condition=Condition(left_attribute='s',
+                                         operator=<built-in function gt>,
+                                         right_value=3448),
+                     destination='A'),
+                'lnx']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,2770]),
+            [   Rule(condition=Condition(left_attribute='m',
+                                         operator=<built-in function lt>,
+                                         right_value=1801),
+                     destination='hdj'),
+                'R'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350]), RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350])]
+
+input
+[   (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[2771,4000]),
+        [   Rule(condition=Condition(left_attribute='s',
+                                     operator=<built-in function gt>,
+                                     right_value=3448),
+                 destination='A'),
+            'lnx']),
+    (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,2770]),
+        [   Rule(condition=Condition(left_attribute='m',
+                                     operator=<built-in function lt>,
+                                     right_value=1801),
+                 destination='hdj'),
+            'R'])]
+output:
+(   [   (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[3449,4000]), ['A']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[2771,3448]),
+            ['lnx']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,2770]),
+            [   Rule(condition=Condition(left_attribute='m',
+                                         operator=<built-in function lt>,
+                                         right_value=1801),
+                     destination='hdj'),
+                'R'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350]), RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350])]
+
+input
+[   (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[3449,4000]), ['A']),
+    (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[2771,3448]), ['lnx']),
+    (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,2770]),
+        [   Rule(condition=Condition(left_attribute='m',
+                                     operator=<built-in function lt>,
+                                     right_value=1801),
+                 destination='hdj'),
+            'R'])]
+output:
+(   [   (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[2771,3448]),
+            ['lnx']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,2770]),
+            [   Rule(condition=Condition(left_attribute='m',
+                                         operator=<built-in function lt>,
+                                         right_value=1801),
+                     destination='hdj'),
+                'R'])],
+    RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[3449,4000]),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350]), RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350]), RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[3449,4000])]
+
+input
+[   (RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[2771,3448]), ['lnx']),
+    (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,2770]),
+        [   Rule(condition=Condition(left_attribute='m',
+                                     operator=<built-in function lt>,
+                                     right_value=1801),
+                 destination='hdj'),
+            'R'])]
+output:
+(   [   (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[2771,3448]),
+            [   Rule(condition=Condition(left_attribute='m',
+                                         operator=<built-in function gt>,
+                                         right_value=1548),
+                     destination='A'),
+                'A']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,2770]),
+            [   Rule(condition=Condition(left_attribute='m',
+                                         operator=<built-in function lt>,
+                                         right_value=1801),
+                     destination='hdj'),
+                'R'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350]), RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350]), RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[3449,4000])]
+
+input
+[   (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[2771,3448]),
+        [   Rule(condition=Condition(left_attribute='m',
+                                     operator=<built-in function gt>,
+                                     right_value=1548),
+                 destination='A'),
+            'A']),
+    (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,2770]),
+        [   Rule(condition=Condition(left_attribute='m',
+                                     operator=<built-in function lt>,
+                                     right_value=1801),
+                 destination='hdj'),
+            'R'])]
+output:
+(   [   (   RatingSpace(x=[1,4000], m=[1549,4000], a=[1,4000], s=[2771,3448]),
+            ['A']),
+        (RatingSpace(x=[1,4000], m=[1,1548], a=[1,4000], s=[2771,3448]), ['A']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,2770]),
+            [   Rule(condition=Condition(left_attribute='m',
+                                         operator=<built-in function lt>,
+                                         right_value=1801),
+                     destination='hdj'),
+                'R'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350]), RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350]), RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[3449,4000])]
+
+input
+[   (RatingSpace(x=[1,4000], m=[1549,4000], a=[1,4000], s=[2771,3448]), ['A']),
+    (RatingSpace(x=[1,4000], m=[1,1548], a=[1,4000], s=[2771,3448]), ['A']),
+    (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,2770]),
+        [   Rule(condition=Condition(left_attribute='m',
+                                     operator=<built-in function lt>,
+                                     right_value=1801),
+                 destination='hdj'),
+            'R'])]
+output:
+(   [   (RatingSpace(x=[1,4000], m=[1,1548], a=[1,4000], s=[2771,3448]), ['A']),
+        (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,2770]),
+            [   Rule(condition=Condition(left_attribute='m',
+                                         operator=<built-in function lt>,
+                                         right_value=1801),
+                     destination='hdj'),
+                'R'])],
+    RatingSpace(x=[1,4000], m=[1549,4000], a=[1,4000], s=[2771,3448]),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350]), RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350]), RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[3449,4000]), RatingSpace(x=[1,4000], m=[1549,4000], a=[1,4000], s=[2771,3448])]
+
+input
+[   (RatingSpace(x=[1,4000], m=[1,1548], a=[1,4000], s=[2771,3448]), ['A']),
+    (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,2770]),
+        [   Rule(condition=Condition(left_attribute='m',
+                                     operator=<built-in function lt>,
+                                     right_value=1801),
+                 destination='hdj'),
+            'R'])]
+output:
+(   [   (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,2770]),
+            [   Rule(condition=Condition(left_attribute='m',
+                                         operator=<built-in function lt>,
+                                         right_value=1801),
+                     destination='hdj'),
+                'R'])],
+    RatingSpace(x=[1,4000], m=[1,1548], a=[1,4000], s=[2771,3448]),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350]), RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350]), RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[3449,4000]), RatingSpace(x=[1,4000], m=[1549,4000], a=[1,4000], s=[2771,3448]), RatingSpace(x=[1,4000], m=[1,1548], a=[1,4000], s=[2771,3448])]
+
+input
+[   (   RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[1351,2770]),
+        [   Rule(condition=Condition(left_attribute='m',
+                                     operator=<built-in function lt>,
+                                     right_value=1801),
+                 destination='hdj'),
+            'R'])]
+output:
+(   [   (   RatingSpace(x=[1,4000], m=[1,1800], a=[1,4000], s=[1351,2770]),
+            ['hdj']),
+        (   RatingSpace(x=[1,4000], m=[1801,4000], a=[1,4000], s=[1351,2770]),
+            ['R'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350]), RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350]), RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[3449,4000]), RatingSpace(x=[1,4000], m=[1549,4000], a=[1,4000], s=[2771,3448]), RatingSpace(x=[1,4000], m=[1,1548], a=[1,4000], s=[2771,3448])]
+
+input
+[   (RatingSpace(x=[1,4000], m=[1,1800], a=[1,4000], s=[1351,2770]), ['hdj']),
+    (RatingSpace(x=[1,4000], m=[1801,4000], a=[1,4000], s=[1351,2770]), ['R'])]
+output:
+(   [   (   RatingSpace(x=[1,4000], m=[1,1800], a=[1,4000], s=[1351,2770]),
+            [   Rule(condition=Condition(left_attribute='m',
+                                         operator=<built-in function gt>,
+                                         right_value=838),
+                     destination='A'),
+                'pv']),
+        (   RatingSpace(x=[1,4000], m=[1801,4000], a=[1,4000], s=[1351,2770]),
+            ['R'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350]), RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350]), RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[3449,4000]), RatingSpace(x=[1,4000], m=[1549,4000], a=[1,4000], s=[2771,3448]), RatingSpace(x=[1,4000], m=[1,1548], a=[1,4000], s=[2771,3448])]
+
+input
+[   (   RatingSpace(x=[1,4000], m=[1,1800], a=[1,4000], s=[1351,2770]),
+        [   Rule(condition=Condition(left_attribute='m',
+                                     operator=<built-in function gt>,
+                                     right_value=838),
+                 destination='A'),
+            'pv']),
+    (RatingSpace(x=[1,4000], m=[1801,4000], a=[1,4000], s=[1351,2770]), ['R'])]
+output:
+(   [   (   RatingSpace(x=[1,4000], m=[839,1800], a=[1,4000], s=[1351,2770]),
+            ['A']),
+        (RatingSpace(x=[1,4000], m=[1,838], a=[1,4000], s=[1351,2770]), ['pv']),
+        (   RatingSpace(x=[1,4000], m=[1801,4000], a=[1,4000], s=[1351,2770]),
+            ['R'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350]), RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350]), RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[3449,4000]), RatingSpace(x=[1,4000], m=[1549,4000], a=[1,4000], s=[2771,3448]), RatingSpace(x=[1,4000], m=[1,1548], a=[1,4000], s=[2771,3448])]
+
+input
+[   (RatingSpace(x=[1,4000], m=[839,1800], a=[1,4000], s=[1351,2770]), ['A']),
+    (RatingSpace(x=[1,4000], m=[1,838], a=[1,4000], s=[1351,2770]), ['pv']),
+    (RatingSpace(x=[1,4000], m=[1801,4000], a=[1,4000], s=[1351,2770]), ['R'])]
+output:
+(   [   (RatingSpace(x=[1,4000], m=[1,838], a=[1,4000], s=[1351,2770]), ['pv']),
+        (   RatingSpace(x=[1,4000], m=[1801,4000], a=[1,4000], s=[1351,2770]),
+            ['R'])],
+    RatingSpace(x=[1,4000], m=[839,1800], a=[1,4000], s=[1351,2770]),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350]), RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350]), RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[3449,4000]), RatingSpace(x=[1,4000], m=[1549,4000], a=[1,4000], s=[2771,3448]), RatingSpace(x=[1,4000], m=[1,1548], a=[1,4000], s=[2771,3448]), RatingSpace(x=[1,4000], m=[839,1800], a=[1,4000], s=[1351,2770])]
+
+input
+[   (RatingSpace(x=[1,4000], m=[1,838], a=[1,4000], s=[1351,2770]), ['pv']),
+    (RatingSpace(x=[1,4000], m=[1801,4000], a=[1,4000], s=[1351,2770]), ['R'])]
+output:
+(   [   (   RatingSpace(x=[1,4000], m=[1,838], a=[1,4000], s=[1351,2770]),
+            [   Rule(condition=Condition(left_attribute='a',
+                                         operator=<built-in function gt>,
+                                         right_value=1716),
+                     destination='R'),
+                'A']),
+        (   RatingSpace(x=[1,4000], m=[1801,4000], a=[1,4000], s=[1351,2770]),
+            ['R'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350]), RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350]), RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[3449,4000]), RatingSpace(x=[1,4000], m=[1549,4000], a=[1,4000], s=[2771,3448]), RatingSpace(x=[1,4000], m=[1,1548], a=[1,4000], s=[2771,3448]), RatingSpace(x=[1,4000], m=[839,1800], a=[1,4000], s=[1351,2770])]
+
+input
+[   (   RatingSpace(x=[1,4000], m=[1,838], a=[1,4000], s=[1351,2770]),
+        [   Rule(condition=Condition(left_attribute='a',
+                                     operator=<built-in function gt>,
+                                     right_value=1716),
+                 destination='R'),
+            'A']),
+    (RatingSpace(x=[1,4000], m=[1801,4000], a=[1,4000], s=[1351,2770]), ['R'])]
+output:
+(   [   (   RatingSpace(x=[1,4000], m=[1,838], a=[1717,4000], s=[1351,2770]),
+            ['R']),
+        (RatingSpace(x=[1,4000], m=[1,838], a=[1,1716], s=[1351,2770]), ['A']),
+        (   RatingSpace(x=[1,4000], m=[1801,4000], a=[1,4000], s=[1351,2770]),
+            ['R'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350]), RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350]), RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[3449,4000]), RatingSpace(x=[1,4000], m=[1549,4000], a=[1,4000], s=[2771,3448]), RatingSpace(x=[1,4000], m=[1,1548], a=[1,4000], s=[2771,3448]), RatingSpace(x=[1,4000], m=[839,1800], a=[1,4000], s=[1351,2770])]
+
+input
+[   (RatingSpace(x=[1,4000], m=[1,838], a=[1717,4000], s=[1351,2770]), ['R']),
+    (RatingSpace(x=[1,4000], m=[1,838], a=[1,1716], s=[1351,2770]), ['A']),
+    (RatingSpace(x=[1,4000], m=[1801,4000], a=[1,4000], s=[1351,2770]), ['R'])]
+output:
+(   [   (RatingSpace(x=[1,4000], m=[1,838], a=[1,1716], s=[1351,2770]), ['A']),
+        (   RatingSpace(x=[1,4000], m=[1801,4000], a=[1,4000], s=[1351,2770]),
+            ['R'])],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=[1,4000], m=[1,838], a=[1717,4000], s=[1351,2770]))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350]), RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350]), RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[3449,4000]), RatingSpace(x=[1,4000], m=[1549,4000], a=[1,4000], s=[2771,3448]), RatingSpace(x=[1,4000], m=[1,1548], a=[1,4000], s=[2771,3448]), RatingSpace(x=[1,4000], m=[839,1800], a=[1,4000], s=[1351,2770])]
+
+input
+[   (RatingSpace(x=[1,4000], m=[1,838], a=[1,1716], s=[1351,2770]), ['A']),
+    (RatingSpace(x=[1,4000], m=[1801,4000], a=[1,4000], s=[1351,2770]), ['R'])]
+output:
+(   [   (   RatingSpace(x=[1,4000], m=[1801,4000], a=[1,4000], s=[1351,2770]),
+            ['R'])],
+    RatingSpace(x=[1,4000], m=[1,838], a=[1,1716], s=[1351,2770]),
+    RatingSpace(x=(), m=(), a=(), s=()))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350]), RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350]), RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[3449,4000]), RatingSpace(x=[1,4000], m=[1549,4000], a=[1,4000], s=[2771,3448]), RatingSpace(x=[1,4000], m=[1,1548], a=[1,4000], s=[2771,3448]), RatingSpace(x=[1,4000], m=[839,1800], a=[1,4000], s=[1351,2770]), RatingSpace(x=[1,4000], m=[1,838], a=[1,1716], s=[1351,2770])]
+
+input
+[(RatingSpace(x=[1,4000], m=[1801,4000], a=[1,4000], s=[1351,2770]), ['R'])]
+output:
+(   [],
+    RatingSpace(x=(), m=(), a=(), s=()),
+    RatingSpace(x=[1,4000], m=[1801,4000], a=[1,4000], s=[1351,2770]))
+[RatingSpace(x=[1,1415], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[2663,4000], m=[1,4000], a=[1,2005], s=[1,1350]), RatingSpace(x=[1,4000], m=[2091,4000], a=[2006,4000], s=[1,1350]), RatingSpace(x=[1,2440], m=[1,2090], a=[2006,4000], s=[537,1350]), RatingSpace(x=[1,4000], m=[1,4000], a=[1,4000], s=[3449,4000]), RatingSpace(x=[1,4000], m=[1549,4000], a=[1,4000], s=[2771,3448]), RatingSpace(x=[1,4000], m=[1,1548], a=[1,4000], s=[2771,3448]), RatingSpace(x=[1,4000], m=[839,1800], a=[1,4000], s=[1351,2770]), RatingSpace(x=[1,4000], m=[1,838], a=[1,1716], s=[1351,2770])]
+9
